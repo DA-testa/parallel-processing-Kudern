@@ -11,7 +11,7 @@ def parallel_processing(n, m, data):
         time, index = heapq.heappop(threads)
         output.append((index, time))
 
-        # Add the next job to the thread, increment its time
+        # Add the next job to the thread, increment its tim
         heapq.heappush(threads, (time + data[i], index))
     
     return output
